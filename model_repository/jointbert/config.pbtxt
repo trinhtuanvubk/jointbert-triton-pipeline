@@ -1,0 +1,42 @@
+name: "jointbert"
+platform: "onnxruntime_onnx"
+max_batch_size : 0
+input [
+  {
+    name: "input_ids"
+    data_type: TYPE_INT64
+    dims: [-1, -1]
+  },
+   {
+    name: "attention_mask"
+    data_type: TYPE_INT64
+    dims: [-1, -1]
+  }
+]
+output [
+  {
+    name: "intent_logits"
+    data_type: TYPE_FP32
+    dims: [-1, 30]
+  },
+  {
+    name: "slot_logits"
+    data_type: TYPE_FP32
+    dims: [-1, -1, 215]
+  },
+  {
+    name: "transitions"
+    data_type: TYPE_FP32
+    dims: [215,215]
+  },
+  {
+    name: "start_transition"
+    data_type: TYPE_FP32
+    dims: [215]
+  },
+   {
+    name: "end_transition"
+    data_type: TYPE_FP32
+    dims: [215]
+  }
+]

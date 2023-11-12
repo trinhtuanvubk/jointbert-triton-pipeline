@@ -1,0 +1,4 @@
+**/__pycache__/
+**/*.onnx
+jointbert.py
+docker-compose*
