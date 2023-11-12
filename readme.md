@@ -15,6 +15,10 @@ conda activate venv
 pip install -r requirements.txt
 ```
 
+### Model preparation
+- Make sure move `model.onnx` like this figure:
+
+![model tree](figure/jb_fig.png)
 ### Run Triton server
 - To run triton server
 ```
