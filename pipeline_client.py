@@ -1,5 +1,3 @@
-from transformers import RobertaTokenizer
-
 import tritonclient.http as tritonhttpclient
 import numpy as np
 from tritonclient.utils import *

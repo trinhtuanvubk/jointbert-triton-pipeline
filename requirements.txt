@@ -1,0 +1,9 @@
+tranformers==4.33.0
+protobuf==3.20.0
+loguru==0.7.0
+joblib==1.1.0 
+python-multipart
+tritonclient[all]
+fastapi
+uvicorn==0.17.5
+gunicorn==20.1.0
